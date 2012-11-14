@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   def create
+    Rails.logger.info request.env.inspect
     session[:user_id] = User.find_or_create_from_auth_hash(request.env['omniauth.auth']).id
     redirect_to root_path
   end
