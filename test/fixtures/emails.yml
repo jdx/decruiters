@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subject: MyString
+  body: MyString
+  from: MyString
+  spam_score: MyString
+  spam_report: MyString
+
+two:
+  subject: MyString
+  body: MyString
+  from: MyString
+  spam_score: MyString
+  spam_report: MyString
