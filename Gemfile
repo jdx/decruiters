@@ -24,4 +24,10 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'simplecov', require: false
+  gem 'rb-fsevent'
+  gem 'spork'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'factory_girl_rails'
 end

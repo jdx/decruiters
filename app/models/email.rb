@@ -1,7 +1,7 @@
 class Email
   include Mongoid::Document
 
-  has_one :user
+  belongs_to :user
 
   field :subject, type: String
   field :body, type: String

@@ -6,6 +6,8 @@ class SendgridController < ApplicationController
     email.user = User.find(params[:to].split('@')[0])
     email.subject = params[:subject]
     email.body = params[:text]
+    email.save!
+
     render nothing: true, status: 200
   end
 end

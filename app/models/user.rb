@@ -17,6 +17,7 @@ class User
   field :linkedin_id, type: String
   field :linkedin_token, type: String
   field :linkedin_secret, type: String
+  field :email_addresses, type: Array
 
   index({linkedin_id: 1}, { unique: true })
 
@@ -41,8 +42,15 @@ class User
       s['skill']['name']
     end
 
+    user.email_addresses ||= []
+    user.email_addresses << auth_hash['info']['email'] unless user.email_addresses.include?(auth_hash['info']['email'])
+
     user.save!
 
     user
+  end
+
+  def to_s
+    name
   end
 end

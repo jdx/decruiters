@@ -2,6 +2,7 @@ OmniAuth.config.test_mode = true
 OmniAuth.config.mock_auth[:linkedin] = OmniAuth::AuthHash.new({
   provider: 'linkedin',
   uid: '12345',
+  email: 'jeff@dickey.xxx',
   credentials: {
     token: 'mytoken',
     token: 'msekret',
