@@ -6,6 +6,4 @@ class Email
   field :subject, type: String
   field :body, type: String
   field :from, type: String
-  field :spam_score, type: String
-  field :spam_report, type: String
 end

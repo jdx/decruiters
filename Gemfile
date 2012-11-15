@@ -22,4 +22,6 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'awesome_print'
   gem 'quiet_assets'
+  gem 'rspec-rails'
+  gem 'capybara'
 end

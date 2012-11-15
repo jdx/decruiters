@@ -1,1 +1,2 @@
-Forward recruiter's emails to: #{current_user.id}@decruiters.com
+- if logged_in?
+  Forward recruiter's emails to: #{current_user.id}@decruiters.com
