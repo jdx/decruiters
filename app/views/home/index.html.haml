@@ -1,4 +1,5 @@
 - if logged_in?
+  #annual
   Forward recruiter's emails to: #{current_user.id}@decruiters.com
   - current_user.emails.each do |email|
     %pre= email.to_yaml
